@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloXupple"
+             x:Class="HelloXupple.MainPage">
+    <ContentView>
+        <StackLayout BackgroundColor="Black" SizeChanged="StackLayout_SizeChanged">
+            <Button Text="Start" HeightRequest="50" WidthRequest="150" BackgroundColor="Lime" 
+            HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Clicked="RandomizeBtn"/>
+         
+            <AbsoluteLayout x:Name="absoluteLayout" BackgroundColor="Gray"/>
+            
+            <Button x:Name="HintImage"  HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"
+                Opacity="0"
+                WidthRequest="50"
+                HeightRequest="80"/>
+        </StackLayout>
+    </ContentView>
+</ContentPage>
